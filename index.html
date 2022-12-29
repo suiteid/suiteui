@@ -1014,16 +1014,21 @@
           </span> 
           <!-- -->untuk Lejitkan Bisnis Anda
         </h2>
-        <p class="mt-4 text-lg text-slate-400 max-w-[600px] mx-auto">
-          Apapun level bisnis anda, Berapapun budget iklan Anda saat ini, Adsumo membantu Anda dapatkan hasil iklan yang lebih baik
+        <p class="mt-4 text-xl text-slate-400 max-w-[600px] mx-auto">
+          Tidak Semahal Saat Iklan mu Boncos..
         </p>
+      </div>
+      <div class="text-center mx-auto max-w-[600px] mt-8">
+        <h3 class="mb-4 text-gray-300 text-xl animate-pulse">⚡️ <span class="text-yellow-300">Flashsale</span> segera berakhir...</h3>  
+        <div id="countdown" class="text-4xl text-white flex items-center flex-row justify-center"></div>
       </div>
       <div class="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
         <section class="flex flex-col order-last lg:order-none">
           <div class="flex flex-col rounded-xl px-6 py-6 sm:px-8 lg:py-8 border border-slate-800">
             <h3 class="mt-2 text-3xl text-white">Starter</h3>
             <p class="mt-2 text-base text-slate-400">Cocok jika Anda hanya butuh fitur reporting dan analytics saja.</p>
-            <p class="text-4xl font-normal tracking-tight text-white mt-8 flex items-center">Rp 49k <span class="text-base ml-2 tracking-normal">/ bulan</span></p>
+            <p class="mt-6 mb-2 text-slate-300 font-normal text-md"><span class="line-through">&nbsp;Rp 99.999 / bulan&nbsp;</span></p>
+            <p class="text-4xl font-normal tracking-tight text-white flex items-center">Rp 49k <span class="text-base ml-2 tracking-normal">/ bulan</span></p>
             <span class="text-slate-500 font-medium text-sm mt-2 mb-4">Dibayar langsung 1 tahun Rp 599.900</span>
             <a class="group inline-flex items-center justify-center rounded-full py-3 px-4 text-sm focus:outline-none my-8 text-white font-medium ring-1 ring-slate-500 hover:ring-slate-300" aria-label="" href="#">
               Daftar Sekarang
@@ -1092,7 +1097,8 @@
           <div class="flex flex-col rounded-xl px-6 sm:px-8 lg:py-8 bg-gradient-to-b from-slate-700 to-slate-800">
             <h3 class="mt-2 text-3xl text-white">Personal 👍</h3>
             <p class="mt-2 text-base text-slate-400">Cocok untuk single fighter yang ingin naik kelas dan bebas dari rutinitas</p>
-            <p class="text-4xl font-normal tracking-tight text-white mt-8 flex items-center">Rp 79k <span class="text-base ml-2 tracking-normal">/ bulan</span></p>
+            <p class="mt-6 mb-2 text-slate-300 font-normal text-lg"><span class="line-through">&nbsp;Rp 159.999 / bulan&nbsp;</span></p>
+            <p class="text-4xl font-normal tracking-tight text-white flex items-center">Rp 79k <span class="text-base ml-2 tracking-normal">/ bulan</span></p>
             <span class="text-slate-500 font-medium text-sm mt-2 mb-4">Dibayar langsung 1 tahun Rp 959.900</span>
             <a class="group inline-flex items-center justify-center rounded-full py-3 px-4 text-sm focus:outline-none bg-blue-600 my-8 text-white font-medium" aria-label="" href="#">
               Daftar Sekarang
@@ -1161,7 +1167,8 @@
           <div class="flex flex-col rounded-xl px-6 sm:px-8 lg:py-8 bg-orange-600 bg-orange-pattern">
             <h3 class="mt-2 text-3xl text-white">Tim 🔥</h3>
             <p class="mt-2 text-base text-white">Cocok untuk tim yang ingin scale up dengan budget iklan yang besar</p>
-            <p class="text-4xl font-normal tracking-tight text-white mt-8 flex items-center">Rp 129k <span class="text-base ml-2 tracking-normal">/ bulan</span></p>
+            <p class="mt-6 mb-2 text-gray-200 font-normal text-lg"><span class="line-through">&nbsp;Rp 259.999 / bulan&nbsp;</span></p>
+            <p class="text-4xl font-normal tracking-tight text-white flex items-center">Rp 129k <span class="text-base ml-2 tracking-normal">/ bulan</span></p>
             <span class="text-white text-sm mt-2 mb-4">Dibayar langsung 1 tahun Rp 1.499.900</span>
             <a class="group inline-flex items-center justify-center rounded-full py-3 px-4 text-sm focus:outline-none text-orange-600 my-8 bg-white font-medium" aria-label="" href="#">
               Daftar Sekarang
@@ -1412,6 +1419,40 @@
         }
       });
     });
+  </script>
+
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 15, 2023 00:00:01").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+  
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="countdown"
+      document.getElementById("countdown").innerHTML = 
+        days + "<span class='text-sm ml-2 mr-6 text-gray-400'>Hari</span>" + 
+        hours + "<span class='text-sm ml-2 mr-6 text-gray-400'>Jam</span>" + 
+        minutes + "<span class='text-base ml-2 mr-6 text-gray-400'>Menit</span>" + 
+       "<span class='animate-ping'>" + seconds + "</span>" + "<span class='text-base ml-2 mr-6 text-gray-400'>Detik</span>";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+      }, 1000);
   </script>
 </body>
 </html>
